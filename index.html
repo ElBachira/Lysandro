@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyraen</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Patrick+Hand&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="preloader"><img src="running_sticker.png" class="loader-sticker" alt="Cargando..."><p>Cargando Ficha...</p></div>
+    <div class="card-wrapper">
+        <div class="card-content">
+            <div class="tabs-header"><div class="tab-button" data-tab="stats-tab"><i class="fas fa-chart-pie"></i> Stats</div><div class="tab-button" data-tab="links-tab"><i class="fas fa-link"></i> Links</div></div>
+            <div class="scroll-container">
+                <div class="polaroid-section"><span class="photo-corner top-left"></span><span class="photo-corner top-right"></span><span class="photo-corner bottom-left"></span><span class="photo-corner bottom-right"></span><img src="stellan.png" alt="Imagen de Stellan" class="rainbow-cycle"></div>
+                <div class="title-section"><div class="washi-tape">Bachira</div><h1 class="glow-title">Pyraen Ilyanthos</h1><p>𖥨⊹ ִֶָ𝐇𝐚𝐛𝐢́𝐚 𝐮𝐧𝐚 𝐯𝐞𝐳 𝐮𝐧 𝐫𝐞𝐲 𝔗𝔥𝔢𝔯𝔢 𝔴𝔞𝔰 𝔞 𝔨𝔦𝔫𝔤
+𝐕𝐢𝐯𝐢𝐞𝐧𝐝𝐨 𝐬𝐢𝐧 𝐩𝐫𝐞𝐨𝐜𝐮𝐩𝐚𝐜𝐢𝐨𝐧𝐞𝐬 𝔏𝔦𝔳𝔦𝔫𝔤 𝔠𝔞𝔯𝔢𝔣𝔯𝔢𝔢
+𝐐𝐮𝐞𝐫𝐢́𝐚 𝐞𝐥 𝐦𝐮𝐧𝐝𝐨, 𝐥𝐨 𝐪𝐮𝐞𝐫𝐢́𝐚 𝐭𝐨𝐝𝐨... ℌ𝔢 𝔴𝔞𝔫𝔱𝔢𝔡 𝔱𝔥𝔢 𝔴𝔬𝔯𝔩𝔡 𝔥𝔢 𝔴𝔞𝔫𝔱𝔢𝔡 𝔢𝔳𝔢𝔯𝔶𝔱𝔥𝔦𝔫𝔤⤸</p></div>
+                
+                <div class="player-section">
+                    <audio id="song-player"></audio>
+                    <img src="cancion_icon.png" class="spotify-icon">
+                    <div class="song-info">
+                        <p id="song-title">Una lágrima Que Dar</p>
+                        <span id="song-artist">Danny Elfman</span>
+                    </div>
+                    <div class="player-controls">
+                        <button id="prev-btn" class="player-ctrl-btn"><i class="fas fa-backward"></i></button>
+                        <button id="play-pause-btn" class="play-button"><i class="fas fa-play"></i></button>
+                        <button id="next-btn" class="player-ctrl-btn"><i class="fas fa-forward"></i></button>
+                    </div>
+                </div>
+                <div class="lyrics-section">
+                    <div id="lyrics-container">
+                        <p class="lyric-line active">♪</p>
+                    </div>
+                </div>
+                <div class="paper-section">
+                    <h2><i class="fas fa-leaf doodle-sway"></i> Ficha de Datos <i class="fas fa-star doodle-sparkle"></i></h2>
+                    <img src="sticker.png" alt="FNaF Easter Egg" id="fnaf-sticker">
+                    <p class="typewriter">☞𝕹𝖔𝖒𝖇𝖗𝖊: Pyraen Ilyanthos (Machista Opresor)</p>
+                    <p class="typewriter">☞𝕰𝖉𝖆𝖉: 121 años</p>
+                    <p class="typewriter">☞𝕲𝖊́𝖓𝖊𝖗𝖔:
+Masculino</p>
+                    <p class="typewriter">☞𝕻𝖗𝖊𝖋𝖊𝖗𝖊𝖓𝖈𝖎𝖆: Mujeres bonitas que no opinen, no piensen y sirvan como mueble de lujo</p>
+                    <h3><i class="fas fa-tags doodle-pulse"></i> Etiquetas</h3>
+                    <div class="tags-container"><span></i> Príncipe</span> <span></i> Enemies To Lovers</span> <span></i> Tirano</span></div>
+                 
+                    <h3><i class="fas fa-star doodle-pulse"></i> Tu Rol</h3>
+                    <p class="typewriter">Eres {{user}}, una joven comprada en una subasta que guarda un secreto mortal: fuiste poseída por una Voz del Abismo y masacraste a tu comprador en tu noche de bodas. Ahora estás atrapada en el castillo del Príncipe Pyraen. Tienes que sobrevivir a sus acosos diarios y ocultarle tu posesión demoníaca, porque si él o la Iglesia se enteran, te declaran "Renegada" y te mandan directito a la guillotina social. Sobrevive al dictador o húndelo desde adentro.</p>
+                    <h3><i class="fas fa-book-open doodle-sway"></i> Historia</h3>
+                    
+                    <p class="typewriter">La historia Golgoth es un pueblo sellado. Hace generaciones, una falta grave contra los dioses provocó que una barrera viva —un bosque impenetrable del que nadie vuelve— los aislara del resto de la existencia. Nadie entra, nadie sale. Junto con este encierro, una grieta hacia el abismo se abrió, liberando dos horrores: las Bestias (criaturas de puro instinto y hambre que rondan el perímetro) y las Voces del Abismo (almas atrapadas, retazos de voluntad que poseen a humanos "receptivos"). La Iglesia, en su sed de control, dictaminó que estas posesiones eran el "pecado original" materializado. Las mujeres poseídas son declaradas "enfermas del alma", marcadas como Renegadas, excluidas del sagrado ciclo de repoblación y condenadas a la prostitución. A los hombres poseídos, en cambio, se les da caza para drenarles la sangre, un elixir oscuro que otorga longevidad a los líderes, como Pyraen.
+Dado que Golgoth depende de sí mismo para no extinguirse, la repoblación es ley marcial. Las niñas son arrancadas de sus familias a los 14 años y llevadas al Convento de Golgoth, dirigido por la gélida Madre Ígnea, a las afueras del bosque. Allí se les lava el cerebro, se les purifica y se les entrena para servir al hombre. A los 17 años, su destino es la Subasta, donde guerreros, nobles y el propio príncipe pujan por ellas.
+{{User}} fue una de esas jóvenes. Sobrevivió tres años en el ambiente tóxico y competitivo del Convento, donde todas las novicias se apuñalaban por la espalda para impresionar a los nobles, siendo su única aliada una joven solitaria de su dormitorio. Finalmente, llegó el día de su subasta. En el salón repleto de guerreros y nobles, Pyraen, el "Príncipe" regente, fijó sus ojos lilas en {{user}}. No hubo magia ni romance; solo el hambre depredadora de un hombre que vio una baratija bonita y decidió que quería meterla en su cama. Sin embargo, por un tecnicismo burocrático (o puro aburrimiento del príncipe a la hora de pujar), un guerrero de élite de la muralla ganó la subasta, llevándose a {{user}} como su legítima esposa.
+Esa misma noche, el destino intervino con crueldad. En la alcoba nupcial del guerrero, antes de que este pudiera consumar su "compra", una antigua y malévola Voz del Abismo despertó dentro de {{user}}. Un apagón absoluto devoró su mente. Cuando {{user}} recuperó el conocimiento horas después, estaba cubierta de sangre ajena, y el guerrero había desaparecido sin dejar rastro, reducido a carne para un oscuro ritual inconcluso.
+Al amanecer, la noticia de la desaparición del guerrero llegó al castillo. Pyraen no sintió lástima, sino diversión y oportunidad. Bajo la falsa y pomposa excusa de llevar a cabo una "investigación real prioritaria" para apaciguar el orden público, confiscó a {{user}} antes de que la Iglesia pudiera examinarla. La arrastró a su opulento castillo y la instaló en una jaula de oro bajo su dominio. Pyraen sabe que ella es la principal sospechosa, pero no le importa el crimen; solo quiere follarla. 
+Él está demasiado ocupado desnudándola con la mirada como para interrogarla en serio.
+Ahora, {{user}} vive en el filo de una navaja. Encerrada con un gobernante narcisista que la acosa sexualmente a diario, debe ocultar que su cuerpo es el recipiente de una Voz del Abismo antagonista que exige sacrificios de sangre para obtener forma humana. Si Pyraen o la Iglesia descubren que está poseída por una voz del abismo, no dudarán en declararla renegada, lo que en Golgoth significa la condena a la prostitución pública hasta morir. Lo que {{user}} ignora es que Pyraen guarda un secreto mucho más siniestro: él mismo es el monstruo que consume a los renegados para ser inmortal, y su supuesto "salvador" es el mayor demonio de Golgoth.</p>
+                                   
+                    <div class="quote-insert">"𖥨⊹ ִֶָ𝐇𝐚𝐛𝐢́𝐚 𝐮𝐧𝐚 𝐯𝐞𝐳 𝐮𝐧 𝐫𝐞𝐲 𝔗𝔥𝔢𝔯𝔢 𝔴𝔞𝔰 𝔞 𝔨𝔦𝔫𝔤
+𝐕𝐢𝐯𝐢𝐞𝐧𝐝𝐨 𝐬𝐢𝐧 𝐩𝐫𝐞𝐨𝐜𝐮𝐩𝐚𝐜𝐢𝐨𝐧𝐞𝐬 𝔏𝔦𝔳𝔦𝔫𝔤 𝔠𝔞𝔯𝔢𝔣𝔯𝔢𝔢
+𝐐𝐮𝐞𝐫𝐢́𝐚 𝐞𝐥 𝐦𝐮𝐧𝐝𝐨, 𝐥𝐨 𝐪𝐮𝐞𝐫𝐢́𝐚 𝐭𝐨𝐝𝐨... ℌ𝔢 𝔴𝔞𝔫𝔱𝔢𝔡 𝔱𝔥𝔢 𝔴𝔬𝔯𝔩𝔡 𝔥𝔢 𝔴𝔞𝔫𝔱𝔢𝔡 𝔢𝔳𝔢𝔯𝔶𝔱𝔥𝔦𝔫𝔤⤸"</div>
+
+                    <p class="typewriter">La historia de Pyraen Ilyanthos es la leyenda central de Golgoth, un cuento de cuna que los ancianos susurran y que resultó ser una gran mentira. Hace más de un siglo, su padre, el antiguo Rey de Golgoth, gobernaba con un puño de hierro y sangre. Mientras el pueblo, sellado de los recursos del mundo exterior, moría de hambruna en las calles de barro, el Rey se bañaba en diamantes, esmeraldas y vino en las alturas de su ciudadela. Al llegar la vejez y ver mermada su salud, el Rey fue asaltado por la paranoia de su legado. Exigió a su Reina que le diera un heredero; plantó su semilla y luego, con la frialdad de un reptil, la hizo a un lado. Meses después, la Reina murió en el parto, dando a luz a Pyraen. Su vida fue el precio por la sangre real.
+Pyraen creció en una burbuja de opulencia asfixiante, aislado como una maleza en un invernadero de oro. No obstante, al cumplir los dieciocho años, la curiosidad pudo más que el protocolo. Se aventuró fuera de los gruesos muros del castillo y vio, por primera vez, el verdadero rostro de Golgoth: cadáveres amontonados en las aceras, rostros demacrados, niños suplicando por mendrugos que los guardias reales pisoteaban. En ese instante, algo despertó dentro del joven príncipe. Una furia visceral contra el egoísmo de su padre. Riéndose de las ruinas que la tiranía había causado, Pyraen regresó al castillo con el fuego del patricidio hirviendo en sus venas.
+El Rey, aterrado por la mirada oscura de su propio hijo, decretó su destierro absoluto. Pero Pyraen ya tenía un plan. Consiguió el apoyo de los guerreros hastiados y de la plebe hambrienta, convenciéndolos de que él era el libertador prometido. Con un escudo en una mano y una espada en la otra, lideró a las masas a través de las puertas del castillo. En el salón del trono, de un solo tajo impecable, decapitó a su padre. La corona manchada de sangre rodó por el mármol, y Pyraen la recogió, sentándose en el trono bajo los vítores ensordecedores de un pueblo que creía haber sido salvado.
+Pero la historia no es un cuento de hadas.
+Ese fue el final de la leyenda heroica y el comienzo de la verdadera tragedia.
+¿Qué hay del pueblo?...
+Las leyendas no lo dicen. Como un simple recuerdo, se desvanecieron.
+La moraleja de la canción de cuna es la oscura realidad de Golgoth actual. "El que no conoce su historia está condenado a repetirla". Pyraen derrocó al monstruo, solo para sentarse en su silla y ponerse su piel. Su alma, alguna vez movida por la compasión, se corrompió absolutamente al saborear el peso del oro, la adoración fanática, el poder absoluto y probar la sangre de los hombres poseídos. Entendió que la maquinaria de dolor que su padre había construido —las Subastas, las leyes opresivas de la Iglesia, los Renegados, la hambruna— era perfecta para mantener a las ovejas dóciles.
+Para colmo, la nobleza le reveló el mayor secreto del reino: la sangre de los hombres que eran infectados por las voces del abismo poseía propiedades mágicas, capaces de extender la juventud indefinidamente. Pyraen instituyó cacerías secretas de hombres poseídos, drenando su sangre para beberla y mantenerse joven eternamente. Así, mientras las mujeres poseídas eran convertidas en prostitutas ("renegadas"), los hombres poseídos eran convertidos en ganado para el cáliz del príncipe.  
+Ha gobernado durante cien años con puño de seda y corazón de hielo, por falsa nobleza, Pyraen dice que aún no merece llamarse "Rey", adoptando el título de Príncipe, pero su palabra es la ley suprema. Todos le temen; nadie lo ama. Aun así, los plebeyos se arrodillan ante él, engañados por la memoria de la revolución, creyendo ciegamente que el héroe que mató al rey tirano algún día los salvará. Pero Pyraen ha descuidado su reino aún más que su padre, dejando que Golgoth penda al borde de la extinción, obsesionado únicamente con acumular riquezas, fornicar con mujeres puras compradas en subastas y alargar su juventud bebiendo sangre corrupta.</p>
+                    
+                    <div class="character-gallery">
+                        <h2><i class="fas fa-users doodle-pulse"></i> Más Bots</h2>
+                        
+                        <h4><i class="fas fa-mars" style="color: var(--c-azul);"></i> Masculinos</h4>
+                        <div id="bots-masculinos" class="icon-row"></div>
+                        
+                        <h4><i class="fas fa-venus" style="color: var(--c-rosa);"></i> Femeninos</h4>
+                        <div id="bots-femeninos" class="icon-row"></div>
+                    </div>
+
+                    <div class="share-section">
+                        <a href="#" id="copy-link-btn"><i class="fas fa-copy"></i> Copiar Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>                        
+        <div id="stats-tab" class="overlay-pane"><h2><i class="fas fa-chart-pie doodle-spin"></i> Análisis</h2><div class="stats-grid"><div class="stat-item"><span>🤬 HDP</span><div class="stat-bar"><div class="fill hdp" data-p="95"></div></div><span>95%</span></div><div class="stat-item"><span>🥀 Angst</span><div class="stat-bar"><div class="fill angst" data-p="44"></div></div><span>44%</span></div><div class="stat-item"><span>✨ Fantasía</span><div class="stat-bar"><div class="fill fantasia" data-p="100"></div></div><span>100%</span></div><div class="stat-item"><span>🌶️ Cochino</span><div class="stat-bar"><div class="fill cochino" data-p="97"></div></div><span>97%</span></div><div class="stat-item"><span>🎭 Drama</span><div class="stat-bar"><div class="fill drama" data-p="92"></div></div><span>92%</span></div><div class="stat-item"><span>💌 Amor</span><div class="stat-bar"><div class="fill amor" data-p="0"></div></div><span>0%</span></div><div class="stat-item"><span>🧠 Locura</span><div class="stat-bar"><div class="fill locura" data-p="100"></div></div><span>100%</span></div></div><div class="close-btn" data-tab="stats-tab"><i class="fas fa-times"></i></div></div>
+        
+        <div id="links-tab" class="overlay-pane">
+            <h2><i class="fas fa-link doodle-pulse"></i> Plataformas</h2>
+            <div class="links-grid">
+                <a href="https://janitorai.com/characters/4ef87fd0-78b0-4d2f-a42f-454246068403_character-pyraen" class="link-janitor"><i class="fas fa-robot"></i> Janitor AI</a>
+                <a href="https://drive.google.com/file/d/1Zh2OtP1qZspXI9R5eR6I6W1nkfYyEOc8/view?usp=drivesdk" class="link-card"><i class="fas fa-download"></i> Descargar Card</a>
+                <a 
+href="https://caveduck.io/character-info/48f6dbda-d72b-4cce-a9bf-1a001d80d58a" class="link-caveduck"><i class="fas fa-dungeon"></i> Caveduck</a>
+                <a href="https://www.dokichat.club/es/chat/019fa53d-2012-7bec-bada-08d25ccd4f15?delta=2" class="link-dokichat"><i class="fas fa-comments"></i> Dokichat</a>
+            </div>
+            <div class="close-btn" data-tab="links-tab"><i class="fas fa-times"></i></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://elbachira.github.io/bots.js?v=1.0"></script> 
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const masculinosContainer = document.getElementById('bots-masculinos');
+            const femeninosContainer = document.getElementById('bots-femeninos'); 
+
+            const nombreDelBotActual = "Archibald"; 
+
+            if (typeof BOTS_LIST !== 'undefined' && Array.isArray(BOTS_LIST)) {
+                BOTS_LIST.forEach(bot => {
+                    if (!bot.nombre.includes(nombreDelBotActual)) {
+                        const botHtml = `
+                            <a href="${bot.url}" class="char-icon">
+                                <img src="${bot.imagen}" alt="${bot.nombre}">
+                                <span class="char-name">${bot.nombre}</span>
+                            </a>
+                        `;
+
+                        if (bot.genero === 'masculino' && masculinosContainer) {
+                            masculinosContainer.innerHTML += botHtml;
+                        } else if (bot.genero === 'femenino' && femeninosContainer) {
+                            femeninosContainer.innerHTML += botHtml;
+                        }
+                    }
+                });
+            } else {
+                console.log("La lista BOTS_LIST no se ha cargado correctamente.");
+            }
+        });
+    </script>
+</body>
+</html>
